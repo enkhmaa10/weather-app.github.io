@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: ghostwhite;
+  color: #222;
+  font: normal normal 1em 'Source Sans Pro', helvetica, arial, sans-serif;
+  height: 100%;
+}
+
+.calendar-app {
+  display: grid;
+  grid-template-rows: auto minmax(auto, 100%) auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+.cal-header {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.cal-main {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.cal-footer {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+
+.full-date {
+  font-size: 2em;
+  margin: 1rem 0;
+}
+
+.view-day {
+  display: grid;
+  grid-gap: 1em;
+  width: 100%;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: start;
+}
+
+.time-of-day h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  border-bottom: 0.125em solid #222;
+}
+
+.appointments li {
+  padding: 1em;
+  margin: 1em 0;
+  position: relative;
+}
+
+.appt {
+  background-color: #ddd;
+  min-height: 4em;
+}
+
+.cat-school {
+  background-color: lightyellow;
+}
+
+.cat-work {
+  background-color: rgb(248, 196, 176);
+}
+
+.cat-home {
+  background-color: rgb(193, 245, 193);
+}
+
+.cat-social {
+  background-color: paleturquoise;
+}
+
+.low {
+  opacity: 0.5;
+}
+
+.critical {
+  color: red;
+}
+
+.critical:before {
+  content: "";
+  height: 100%;
+  width: 0.5em;
+  background-color: tomato;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.start-time {
+  border-bottom: 1px solid #222;
+}
+
+
+
+
+/* @media screen and (min-width: 50em) {
+  .view-day {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
+
+@media print {
+  * {
+    color: #000 !important;
+  }
+  .view-day {
+    grid-template-columns: 1fr;
+  }
+}
