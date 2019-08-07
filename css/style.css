@@ -1,0 +1,70 @@
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: #333;
+  background-color: grey;
+  line-height: 1;
+  margin: 0;
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  height:100%;
+  width: 100%;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  padding: 1em;
+  margin: 0;
+}
+
+.city-name {
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0;
+  font-family: "Vivaldi";
+  color: white; 
+  text-align: center;
+  ; 
+}
+
+.city {
+  height: 20rem;
+  padding: 5em;
+  background-color: hsla(0, 9%, 26%, 0.158);
+}
+
+
+.temp {
+  font-weight: 700;
+  font-size: 4em;
+  font-family: "Vivaldi";
+  color: white; 
+  text-align: center;
+}
+
+.icon {
+  -webkit-filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(30,30,30,0.6));
+  filter:         drop-shadow(0.125rem 0.125rem 0.125rem rgba(30,30,30,0.6));
+  grid-area: icon;
+  position: relative;
+  overflow: hidden;
+}
+.icon img {
+  height: 5em;
+  width: auto;
+  position: absolute;
+  top: -0.5em;
+}
+
