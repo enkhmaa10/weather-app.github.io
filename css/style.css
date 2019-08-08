@@ -10,6 +10,19 @@ body {
   margin: 0;
 }
 
+
+.btn-next {
+  position: fixed;
+  top:90%;
+  bottom:1em; 
+  left:47%;
+  height: 5em; 
+  width: 10em;
+  font-size: 1.5em;
+  font-family: "Mongolian Baiti";
+
+}
+
 .grid {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
@@ -59,7 +72,6 @@ body {
   filter:         drop-shadow(0.125rem 0.125rem 0.125rem rgba(30,30,30,0.6));
   grid-area: icon;
   position: relative;
-  overflow: hidden;
 }
 .icon img {
   height: 5em;

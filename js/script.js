@@ -57,7 +57,6 @@ const goGetWeather1 = (lat1, lon1) => {
       const iconImg = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`
       $(`#icon1`).innerHTML = `<img src="${iconImg}" alt="${weather[0].main}">`;
 
- 
       $(`#content1`).style.backgroundImage = `url("https://source.unsplash.com/random/1000×1000/?${name},${weather[0].main},skyline")`
 
       $(`#name1`).innerHTML = `<div class="city-name" id="name">${name}, ${country}</div>`
@@ -66,6 +65,7 @@ const goGetWeather1 = (lat1, lon1) => {
   });
 
 }
+
 
 
 window.onload = () => { navigator.geolocation.getCurrentPosition( 
